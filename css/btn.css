@@ -1,0 +1,10 @@
+#btn {
+    color: black; 
+    text-decoration: none; 
+    transition: color 0.3s; 
+}
+
+#btn:hover {
+    color: rgb(161, 231, 225); 
+}
+

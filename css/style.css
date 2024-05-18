@@ -1,0 +1,184 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+/*ENCABEZADO DE LA PAJINA*/
+.top-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: black;
+    height: 150px;
+}
+.logo img {
+    height: 100px;
+}
+.search-bar {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.search-bar input {
+    width: 50%;
+    padding: 5px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px 0 0 4px;
+    outline: none;
+}
+.search-bar button {
+    padding: 5px 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-left: none;
+    border-radius: 0 4px 4px 0;
+    background-color: #ddd;
+    cursor: pointer;
+}
+.search-bar button:hover {
+    background-color: #ccc;
+}
+
+.cart img {
+    height: 40px;
+}
+.icon {
+    margin-left: auto;
+    margin-right: 40px;
+    position: relative;
+}
+.icon i {
+    font-size: 24px; 
+    color: goldenrod; 
+}
+.icon 
+/*MENU DESPLEGABLE DEL ICONO LOGIN*/
+.menu-icon {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 230px;
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,0.2);
+    z-index: 1;
+    padding: 3px;
+    right: -55px; /* Ajusta la posición del menú para que aparezca a la derecha */
+}
+
+.menu-icon a {
+    display: inline-block;
+    color: black;
+    padding: 5px 10px;
+    text-decoration: none;
+    border: solid 2px black;
+}
+
+.menu-icon a:hover {
+    background-color: #ddd;
+}
+
+.icon:hover .menu-icon {
+    display: flex; /* Mostrar elementos hijos en línea */
+    flex-direction: row; /* Establecer dirección horizontal */
+    top: calc(100% + 1px); /* Ajusta la posición vertical del menú */
+}
+/*BARRA DE NAVEGACION*/
+.nav {
+    background-color: #fdb819;
+}
+
+.nav ul {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+}
+
+.nav ul li {
+    margin: 0 15px;
+}
+
+.nav ul li a {
+    display: block;
+    padding: 15px;
+    color: black;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.nav ul li a:hover {
+    background-color: black;
+    color: white;
+}
+
+
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background-color: #f8f8f8;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+/*COMTENDO DE LA PAJINA*/
+main {
+    display: flex;
+    height: 100vh;
+    background-color: #ECECEC;
+}
+/*SECCION-1*/
+.section-1 {
+    background-color: white;
+    width: 20%; /* Ajusta este valor según necesites el ancho de la sección izquierda */
+    min-width: 200px; /* Evita que sea demasiado angosta */
+    max-width: 300px; /* Evita que sea demasiado ancha */
+    box-sizing: border-box;
+    padding: 20px;
+    margin: 40px 30px 0 30px;
+
+}
+/*barra de navegacion*/
+
+.nav-bar h4 {
+    margin-bottom:10px; /* Eliminar el margen superior del encabezado */
+    color: #333;
+    padding-left: 9px;
+}
+.nav-bar ul {
+    list-style-type: none; /* Eliminar los marcadores de lista */
+    padding: 0;
+    
+    margin: 0;
+}
+
+.nav-bar li {
+    margin: 0;
+    
+}
+
+.nav-bar a {
+    text-decoration: none; /* Eliminar subrayado de enlaces */
+    color: #333; /* Color del texto del enlace */
+    padding: 10px;
+    display: block;
+    border-radius: 5px;
+}
+
+.nav-bar a:hover {
+    background-color: #ECECEC;
+    color: black;
+}
+/*SECTION-2*/
+.section-2 {
+    background-color: white;
+    flex: 1;
+    padding: 20px;
+    box-sizing: border-box;
+    margin: 40px 30px 0 10px;
+}
